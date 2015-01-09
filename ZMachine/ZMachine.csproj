@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{869A32B5-30DD-4101-B46F-A098D5331EFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ZMachine</RootNamespace>
+    <AssemblyName>ZMachine</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameState.cs" />
+    <Compile Include="v3\V3Screen.cs" />
+    <Compile Include="VM\Formatters\BufferingFormatter.cs" />
+    <Compile Include="VM\Console\ConsoleKeyboard.cs" />
+    <Compile Include="VM\Console\ConsoleTitleWindow.cs" />
+    <Compile Include="VM\Console\ConsoleWindow.cs" />
+    <Compile Include="VM\Console\ConsoleZMachine.cs" />
+    <Compile Include="VM\Formatters\SimpleFormatter.cs" />
+    <Compile Include="VM\Formatters\TextBlockFormatter.cs" />
+    <Compile Include="VM\Keyboard.cs" />
+    <Compile Include="VM\Sound.cs" />
+    <Compile Include="VM\Formatter.cs" />
+    <Compile Include="VM\Screen.cs" />
+    <Compile Include="VM\VirtualMachine.cs" />
+    <Compile Include="VM\Window.cs" />
+    <Compile Include="Common\ZIO.cs" />
+    <Compile Include="Common\ZObjectTableCore.cs" />
+    <Compile Include="Common\ZProcessorCore.cs" />
+    <Compile Include="Common\ZProcessorOpCodes.cs" />
+    <Compile Include="VM\Color.cs" />
+    <Compile Include="IZDictionary.cs" />
+    <Compile Include="IZHeader.cs" />
+    <Compile Include="IZMemory.cs" />
+    <Compile Include="IZProcessor.cs" />
+    <Compile Include="Common\OpcodeType.cs" />
+    <Compile Include="Common\OperandType.cs" />
+    <Compile Include="VM\Font.cs" />
+    <Compile Include="IVirtualMachine.cs" />
+    <Compile Include="IZInstruction.cs" />
+    <Compile Include="v3\ZHeader.cs" />
+    <Compile Include="v5\ZDictionary.cs" />
+    <Compile Include="v5\ZHeader.cs" />
+    <Compile Include="v5\ZInstruction.cs" />
+    <Compile Include="v5\ZMemory.cs" />
+    <Compile Include="v5\ZObjectTable.cs" />
+    <Compile Include="v5\ZProcessor.cs" />
+    <Compile Include="Common\ZOperationDef.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="VM\Style.cs" />
+    <Compile Include="Common\ZCallFrame.cs" />
+    <Compile Include="v3\ZDictionary.cs" />
+    <Compile Include="Common\ZHeaderBase.cs" />
+    <Compile Include="v3\ZInstruction.cs" />
+    <Compile Include="v3\ZObjectTable.cs" />
+    <Compile Include="v3\ZProcessor.cs" />
+    <Compile Include="v3\ZMemory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="v5\V5Screen.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Common\ZStatus.cs" />
+    <Compile Include="Common\ZText.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

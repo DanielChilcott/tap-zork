@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        .pad {
+            margin: 2px;
+        }
+
+        .word {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="s">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script src="ui.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            start();
+        });
+    </script>
+
+    
+        <div class="container-fluid" style="padding-bottom:2em;">
+            <div id="gameWindow" style="margin-left:-10px;"></div>
+
+            <div class="row">
+
+                <span id="commandContainer"></span>
+                <input type="text" id="manualCommandTextbox" />
+                <button class="pad btn btn-primary" id="executeCommand" disabled>Go</button>
+                <img src="images/ajax-loader.gif" id="loaderImage" />
+
+            </div>
+
+            <div id="verbContainer" style="padding-top:1em;display:none;">
+                <div id="priVerbContainer" class="row" style="padding-top:1em">
+                    <button class="pad btn btn-default" command="inventory">inv</button>
+                    <button class="pad btn btn-default" id="togglePaletteButton">...</button>
+
+                </div>
+
+                <div id="moveVerbContainer" class="row" style="padding-top:1em">
+
+                    <table style="margin:0">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><button class="pad btn btn-default" command="up"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></button></td>
+
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><button class="pad btn btn-default" command="go nw"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></button></td>
+                            <td><button class="pad btn btn-default" command="north"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></button></td>
+                            <td><button class="pad btn btn-default" command="go ne"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="pad btn btn-default" command="west"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button></td>
+                            <td>&nbsp;</td>
+                            <td><button class="pad btn btn-default" command="east"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true" command="east"></span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="pad btn btn-default" command="go sw"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></button></td>
+                            <td><button class="pad btn btn-default" command="south"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></button></td>
+                            <td><button class="pad btn btn-default" command="go se"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></button></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><button class="pad btn btn-default" command="down"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></button></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div id="extVerbContainer" class="row" style="padding-top:1em;display:none">
+
+                </div>
+
+            </div>
+        </div>
+    
+</body>
+
+</html>

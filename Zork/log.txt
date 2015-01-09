@@ -1,0 +1,43 @@
+1/6/2015 10:50:24 AM
+something
+   at Zork.GameController.ExecuteCommand(String gameId, GameCommand command) in d:\data\src\ZMachineRunner\ZMachine.NET\Zork\Controllers\GameController.cs:line 21
+
+  another
+
+
+
+
+1/6/2015 1:13:30 PM Starting new game 677493457
+1/6/2015 1:16:10 PM Starting new game 677493457
+1/6/2015 1:17:06 PM Starting new game 628829526
+1/6/2015 1:17:09 PM Starting new game 383072298
+1/6/2015 1:17:37 PM Starting new game 383072298
+1/6/2015 1:18:28 PM Starting new game 233554998
+1/6/2015 1:18:57 PM Starting new game 218380557
+1/6/2015 1:19:07 PM Application_Error
+An error occurred loading a configuration file: The process cannot access the file 'D:\home\site\wwwroot\web.config' because it is being used by another process. (D:\home\site\wwwroot\web.config)
+   at System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   at System.Configuration.BaseConfigurationRecord.ThrowIfParseErrors(ConfigurationSchemaErrors schemaErrors)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.Configuration.HttpConfigurationSystem.GetApplicationSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at Zork.HostManager.HandleCleanSessions(Boolean forceCleanAll) in d:\data\src\ZMachineRunner\ZMachine.NET\Zork\App_Code\HostManager.cs:line 59
+   at Zork.Global.Application_End(Object sender, EventArgs e) in d:\data\src\ZMachineRunner\ZMachine.NET\Zork\Global.asax.cs:line 83
+
+  The process cannot access the file 'D:\home\site\wwwroot\web.config' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)  
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)  
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)  
+   at System.Configuration.Internal.InternalConfigHost.StaticOpenStreamForRead(String streamName)  
+   at System.Configuration.Internal.InternalConfigHost.System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(String streamName, Boolean assertPermissions)  
+   at System.Configuration.Internal.InternalConfigHost.System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(String streamName)  
+   at System.Configuration.Internal.DelegatingConfigHost.OpenStreamForRead(String streamName)  
+   at System.Configuration.BaseConfigurationRecord.InitConfigFromFile()
+
+
+
+1/6/2015 1:19:24 PM Starting new game 218380557
+1/6/2015 1:19:25 PM Starting new game 233554998
