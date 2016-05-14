@@ -5,9 +5,9 @@ Tap Zork offers a responsive web UI where users can tap words inside responses (
 
 The concept could be adapted to support any text-only ZMachine game (up to v5 I think) and with some more work to allow users to customise their own word palette, this could provide a great way to make these games more playable on a mobile device.
 
-![Alt text](/screengrabs/grab1.jpg?raw=true)
+![Alt text](/screengrabs/grab1.png?raw=true)
 
-![Alt text](/screengrabs/grab2.jpg?raw=true)
+![Alt text](/screengrabs/grab2.png?raw=true)
 
 Acknowledgements
 ----------------
