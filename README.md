@@ -7,8 +7,6 @@ The concept could be adapted to support any text-only ZMachine game (up to v5 I 
 
 ![Alt text](/screengrabs/grab1.png?raw=true)
 
-![Alt text](/screengrabs/grab2.png?raw=true)
-
 Acknowledgements
 ----------------
 
